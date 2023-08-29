@@ -12,7 +12,8 @@ function App() {
       .then((data) => {
         console.log(data);
         setCurrentTime(data.content);
-      });
+      })
+      .catch(console.error);
   }, []);
 
   return (

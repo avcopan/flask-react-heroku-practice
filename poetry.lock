@@ -59,6 +59,40 @@ async = ["asgiref (>=3.2)"]
 dotenv = ["python-dotenv"]
 
 [[package]]
+name = "flask-cors"
+version = "4.0.0"
+description = "A Flask extension adding a decorator for CORS support"
+optional = false
+python-versions = "*"
+files = [
+    {file = "Flask-Cors-4.0.0.tar.gz", hash = "sha256:f268522fcb2f73e2ecdde1ef45e2fd5c71cc48fe03cffb4b441c6d1b40684eb0"},
+    {file = "Flask_Cors-4.0.0-py2.py3-none-any.whl", hash = "sha256:bc3492bfd6368d27cfe79c7821df5a8a319e1a6d5eab277a3794be19bdc51783"},
+]
+
+[package.dependencies]
+Flask = ">=0.9"
+
+[[package]]
+name = "gunicorn"
+version = "21.2.0"
+description = "WSGI HTTP Server for UNIX"
+optional = false
+python-versions = ">=3.5"
+files = [
+    {file = "gunicorn-21.2.0-py3-none-any.whl", hash = "sha256:3213aa5e8c24949e792bcacfc176fef362e7aac80b76c56f6b5122bf350722f0"},
+    {file = "gunicorn-21.2.0.tar.gz", hash = "sha256:88ec8bff1d634f98e61b9f65bc4bf3cd918a90806c6f5c48bc5603849ec81033"},
+]
+
+[package.dependencies]
+packaging = "*"
+
+[package.extras]
+eventlet = ["eventlet (>=0.24.1)"]
+gevent = ["gevent (>=1.4.0)"]
+setproctitle = ["setproctitle"]
+tornado = ["tornado (>=0.2)"]
+
+[[package]]
 name = "itsdangerous"
 version = "2.1.2"
 description = "Safely pass data to untrusted environments and back."
@@ -146,6 +180,17 @@ files = [
 ]
 
 [[package]]
+name = "packaging"
+version = "23.1"
+description = "Core utilities for Python packages"
+optional = false
+python-versions = ">=3.7"
+files = [
+    {file = "packaging-23.1-py3-none-any.whl", hash = "sha256:994793af429502c4ea2ebf6bf664629d07c1a9fe974af92966e4b8d2df7edc61"},
+    {file = "packaging-23.1.tar.gz", hash = "sha256:a392980d2b6cffa644431898be54b0045151319d1e7ec34f0cfed48767dd334f"},
+]
+
+[[package]]
 name = "python-dotenv"
 version = "1.0.0"
 description = "Read key-value pairs from a .env file and set them as environment variables"
@@ -179,4 +224,4 @@ watchdog = ["watchdog (>=2.3)"]
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.10"
-content-hash = "4b408b4f6917d32599bdaf4e60fad3d67f0b3badb58e84cb36a533d82f101674"
+content-hash = "2d1c3769b12a52c81b0a08a0b94c949ce7c2d5c2c45f5fd258e8dd19f88bf795"
